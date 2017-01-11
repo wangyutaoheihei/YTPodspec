@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cqc-a8-4dW"/>
+                        <viewControllerLayoutGuide type="bottom" id="4F5-oi-RWx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBp-zK-hMs" customClass="CustomTextfiled">
+                                <rect key="frame" x="36" y="220" width="248" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YCy-zW-Rtx"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Np9-Y0-dvf">
+                                <rect key="frame" x="29" y="-62" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="输出"/>
+                                <connections>
+                                    <action selector="puttext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7K-gh-udZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMq-Lf-ptf">
+                                <rect key="frame" x="66" y="310" width="188" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jea-aj-ABL"/>
+                                </constraints>
+                                <state key="normal" title="清除"/>
+                                <connections>
+                                    <action selector="delegate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqj-sd-fLL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VMq-Lf-ptf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="GEc-05-1jZ"/>
+                            <constraint firstItem="GBp-zK-hMs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="KfO-74-Q8R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VMq-Lf-ptf" secondAttribute="trailing" constant="50" id="Xsi-nZ-hzy"/>
+                            <constraint firstItem="VMq-Lf-ptf" firstAttribute="top" secondItem="GBp-zK-hMs" secondAttribute="bottom" constant="50" id="sHV-cu-WrG"/>
+                            <constraint firstItem="GBp-zK-hMs" firstAttribute="top" secondItem="Cqc-a8-4dW" secondAttribute="bottom" constant="200" id="tcB-Kx-cQU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GBp-zK-hMs" secondAttribute="trailing" constant="20" id="xsi-NE-x3K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spacetextfied" destination="GBp-zK-hMs" id="Ha5-Ca-XAf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="-295"/>
+        </scene>
+    </scenes>
+</document>
